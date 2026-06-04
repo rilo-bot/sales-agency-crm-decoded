@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
+/**
+ * theme.css — pre-written by the design pipeline (server-controlled).
+ *
+ * Tier: tech-developer
+ * Mode: light (default)
+ * Primary source: tdd
+ * Accent source:  tier-fallback
+ * Tier origin:    tdd-keywords
+ *
+ * This file overrides EVERY semantic shadcn variable so the brand hue
+ * carries through cards, borders, muted surfaces, focus rings, and
+ * sidebars — not just the primary CTA. Loaded AFTER index.css so the
+ * cascade picks these values.
+ *
+ * Format: shadcn space-separated HSL ("H S% L%"), read via
+ * `hsl(var(--primary))` in Tailwind utilities.
+ */
+
+:root {
+  --background: 38 18.2% 99%;
+  --foreground: 38 25% 8%;
+  --card: 0 0% 100%;
+  --card-foreground: 38 25% 8%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 38 25% 8%;
+  --primary: 38 65% 50%;
+  --primary-foreground: 38 25% 9%;
+  --secondary: 265 33.8% 95%;
+  --secondary-foreground: 265 30% 22%;
+  --muted: 38 16.3% 96%;
+  --muted-foreground: 38 12% 42%;
+  --accent: 265 22.5% 92%;
+  --accent-foreground: 265 35% 22%;
+  --border: 38 16.3% 91%;
+  --input: 38 16.3% 91%;
+  --ring: 38 65% 50%;
+  --brand: 38 65% 50%;
+  --brand-foreground: 38 25% 9%;
+  --brand-accent: 265 75% 55%;
+  --brand-accent-foreground: 265 15% 99%;
+}
+
+.dark {
+  --background: 38 13% 9%;
+  --foreground: 38 18% 96%;
+  --card: 38 14.3% 12%;
+  --card-foreground: 38 18% 96%;
+  --popover: 38 14.3% 12%;
+  --popover-foreground: 38 18% 96%;
+  --primary: 38 65% 56%;
+  --primary-foreground: 38 25% 9%;
+  --secondary: 265 22.5% 16%;
+  --secondary-foreground: 265 30% 92%;
+  --muted: 38 13% 18%;
+  --muted-foreground: 38 16% 65%;
+  --accent: 265 18.8% 18%;
+  --accent-foreground: 265 30% 92%;
+  --border: 38 14.3% 22%;
+  --input: 38 14.3% 22%;
+  --ring: 38 65% 56%;
+  --brand: 38 65% 56%;
+  --brand-foreground: 38 25% 9%;
+  --brand-accent: 265 75% 61%;
+  --brand-accent-foreground: 265 15% 99%;
+}
+
+:root {
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Manrope', sans-serif;
+}
+body { font-family: var(--font-body); }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-display); }
